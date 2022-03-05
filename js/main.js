@@ -6,4 +6,7 @@ setInterval(()=>{
     function getRandomArbitrary(min, max) {
         return Math.random() * (max - min) + min;
       }
+    red = getRandomArbitrary(1,255)
+    blue = getRandomArbitrary(1,255)
+    green = getRandomArbitrary(1,255)
 })
