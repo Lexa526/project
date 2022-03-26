@@ -49,6 +49,7 @@ main h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%
 }
 .content1{
     display: flex;
@@ -99,3 +100,19 @@ hr{
     background: linear-gradient(90deg,#0717ed,#ef2525);
     border: none;
 	}  
+.a_p_s{
+	height: 15px;
+    width: 30px;
+}
+.a_p_r{
+	height: 15px;
+    width: 30px;
+}
+.b_p_r{
+	height: 15px;
+    width: 30px;
+} 
+.p{
+	display: flex;
+    justify-content: space-between;
+}
