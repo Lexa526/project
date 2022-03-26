@@ -52,3 +52,11 @@ setInterval(() => {
     }
   }
 }, 15000)
+
+let pButton = document.querySelector(".stepen_resul")
+pButton.addEventListener("click", (e) =>{
+  let a = document.querySelector(".a_stepen").value 
+  let b = document.querySelector(".b_stepen").value 
+  let result = a ** b
+  document.querySelector(".powers-answer").textContent = result
+})
