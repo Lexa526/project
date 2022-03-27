@@ -22,6 +22,7 @@ header{
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 .header img{
     width: 40px;
@@ -32,9 +33,19 @@ header{
     margin: 5px;
     color: orange;
 } 
+.header button{
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(30, 144, 255);
+    outline: none;
+    transition: .3s; 
+    background: linear-gradient(0deg,#696eff,#f6a9ff); 
+}
 .baner{
     width: 100%;
-    height: 500px;
+    height: 600px;
 }
 main h1{
     display: flex;
@@ -94,8 +105,8 @@ main h1{
     height: 15px;
     width: 30px;
 }
-hr{
-	width: 30%;
+.hr{
+	width: 100%;
     height: 1px;
     background: linear-gradient(90deg,#0717ed,#ef2525);
     border: none;
@@ -115,4 +126,57 @@ hr{
 .p{
 	display: flex;
     justify-content: space-between;
+    background: linear-gradient(to right, skyblue -50%, purple 150%);
+    border-radius: 10px;
+    margin: 10px;
+
+    
 }
+.square{
+    margin: 15px;
+    background: linear-gradient(180deg,#84f0c7,#00a6f4,#292acf);
+    border-radius: 5px;
+}
+.rectangle{
+    margin: 15px;
+    background: linear-gradient(0deg,#696eff,#f6a9ff);
+    border-radius: 5px;
+}
+.hr_p{
+    background: linear-gradient(90deg,#0717ed,#ef2525);
+    width: 1px;
+    height: 200px;
+    border: none;
+}
+.main_math{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 430px;
+    background: linear-gradient(orangered, gold);
+    border-radius: 20px;
+}
+.nado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    padding-top: 70px;
+}
+.div_p{
+    background: linear-gradient(to bottom right, purple, crimson, orangered, gold);
+    border-radius: 10px;
+    margin: 10px;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('/img/icon_top.png') no-repeat;
+    }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,38 +9,65 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="main">
+    <header>
+        <div class="header">
+            <img src="./img/icon.png" alt="">
+            <div class="links">
+                <a href="./index.html">Основной Сайт</a>
+                <a href="./math.html">Математика</a>
+                <a href="./himia.html">Химия</a>
+                <a href="./physiks.html">Физика</a>
+                <a href="https://www.ph4.ru/r.php" target="_blank">Случаяный Сайт</a>
+            </div>
+            <div>
+                <button>💣</button>
+                <button>Очистить поля для ввода</button>
+            </div>
+        </div>
+    </header>
+    <main>
+    <div class="nado">
+    <div class="main_math">
         <h1>Математика</h1>
         <h2>5 класс</h2>
-        <hr>
+        <hr class="hr">
+        <div class="div_p">
         <h4>Степень числа</h4>
-        <p class="stepen"> 
-            <input type="number" class="a_stepen" placeholder="a">^<input type="number" class="b_stepen" placeholder="b"> <span class="powers-answer"></span>
+        <p class="stepen">
+            <input type="number" class="a_stepen" placeholder="a">^<input type="number" class="b_stepen"
+                placeholder="b"> <span class="powers-answer"></span>
         </p>
         <p>
-           a - число
-           n - степень
+            a - число
+            n - степень
         </p>
         <button class="stepen_result">Результат</button>
-        <hr>
+        </div>
+        <hr class="hr">
         <h3>Периметры<h3>
-        <div class="p">
-        <div class="square">
-        <h4>Периметр квадрата</h4>
-        <p>P = 4 * <input type="number" class="a_p_s" placeholder="a"> <span class="p_s_a"></span></p>
-        <p>a - сторона квадрата</p>
-         <button class="p_s_result">Результат</button>
-        </div>
-        <div class="rectangle">
-        <h4>Периметр Прямоугольника</h4>
-        <p>P = 2 * (<input type="number" class="a_p_r" placeholder="a">+<input type="number" class="b_p_r" placeholder="b">)<span class="p_r_a"></span></p>
-        <p>a - ширина прямоугольника</p>
-        <p>b - длинна прямоугольника</p>
-         <button class="p_r_result">Результат</button>
-        </div>
-        </div>	
+                <div class="p">
+                    <div class="square">
+                        <h4>Периметр квадрата</h4>
+                        <p>P = 4 * <input type="number" class="a_p_s" placeholder="a"> <span class="p_s_a"></span></p>
+                        <p>a - сторона квадрата</p>
+                        <button class="p_s_result">Результат</button>
+                    </div>
+                    <hr class="hr_p">
+                    <div class="rectangle">
+                        <h4>Периметр Прямоугольника</h4>
+                        <p>P = 2 * (<input type="number" class="a_p_r" placeholder="a">+<input type="number"
+                                class="b_p_r" placeholder="b">)<span class="p_r_a"></span></p>
+                        <p>a - ширина прямоугольника</p>
+                        <p>b - длинна прямоугольника</p>
+                        <button class="p_r_result">Результат</button>
+                    </div>
+                </div>
     </div>
+    </div>
+</main>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
