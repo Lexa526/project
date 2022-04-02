@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="shortcut icon" href="./img/main_icon.ico" type="image/x-icon">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#topButton').fadeIn();
+            } else {
+                $('#topButton').fadeOut();
+            }
+        });
+        $('#topButton').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 700);
+        });
+    });
+</script>
+
+<body>
+    <header id="header">
+        <div class="header">
+            <img src="./img/icon.png" alt="">
+            <div class="links">
+                <a href="./index.html">Основной Сайт</a>
+                <a href="./math.html">Математика</a>
+                <a href="./physiks.html">Физика</a>
+                <a href="./himia.html">Химия</a>
+                <a href="https://www.ph4.ru/r.php" target="_blank">Случаяный Сайт</a>
+            </div>
+            <div>
+                <button class="bomb">💣</button>
+                <button class="clear">Очистить поля для ввода</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nado">
+            <div class="main_math">
+                <h1>Математика</h1>
+                <h2>8 класс</h2>
+                <hr class="hr">
+                <div class="div_p">
+                    <h2>Степень числа</h2>
+                    <p class="stepen">
+                        <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+                            class="a_stepen" placeholder="a">^<input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="b_stepen"
+                            placeholder="b"> = <input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="c_stepen"
+                            placeholder="c">
+                    </p>
+                    <p>
+                        a - число
+                        n - степень
+                        c - ответ
+                    </p>
+                    <button class="stepen_result">Результат</button>
+                </div>
+                <hr class="hr">
+                <div class="square_x">
+                    <h2>Квaдратные уравнения</h2>
+                    <p><input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+                            class="s_x_a" placeholder="a">x^2+<input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="s_x_b"
+                            placeholder="b">x+<input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="s_x_c"
+                            placeholder="c"> = 0</p>
+                    <p><span class="s_x_x"></span></p>
+                    <button class="s_x_result">Результат</button>
+                </div>
+                <div class="ne_x">
+                    <h2>Квaдратные не равенства</h2>
+                    <p><input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+                            class="ne_x_a" placeholder="a">x^2+<input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="ne_x_b"
+                            placeholder="b">x+<input type="number"
+                            onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="ne_x_c"
+                            placeholder="c"> <select class="ne_x_znak">
+                            <option value=">">></option>
+                            <option value="<"><</option>
+                            <option value="=s">=</option>
+                            <option value=">=">>=</option>
+                            <option value="<="><=</option>
+                        </select> 0</p>
+                        <p><span class="ne_x_x"></span></p>
+                    <button class="ne_x_result">Результат</button>
+                </div>
+            </div>
+        </div>
+        <div style="height:3000px"></div>
+
+        <div id="topButton"><img src="./img/icon_top.png" width="60px" height="60px" /></div>
+    </main>
+    <script src="./js/math.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

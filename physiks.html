@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Физика</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="shortcut icon" href="./img/main_icon.ico" type="image/x-icon">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#topButton').fadeIn();
+            } else {
+                $('#topButton').fadeOut();
+            }
+        });
+        $('#topButton').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 700);
+        });
+    });
+</script>
+
+<body>
+    <header id="header">
+        <div class="header">
+            <img src="./img/icon.png" alt="">
+            <div class="links">
+                <a href="./index.html">Основной Сайт</a>
+                <a href="./math.html">Математика</a>
+                <a href="./physiks.html">Физика</a>
+                <a href="./himia.html">Химия</a>
+                <a href="https://www.ph4.ru/r.php" target="_blank">Случаяный Сайт</a>
+            </div>
+            <div>
+                <button class="bomb">💣</button>
+                <button class="clear">Очистить поля для ввода</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nado">
+            <div class="main_physiks">
+                <h1>Физика</h1>
+                <h2>8 класс</h2>
+                <hr class="hr">
+                <div class="Q">
+                    <h2>Количество теплоты</h2>
+                    <p>Q = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="Q_c" placeholder="c">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="Q_m" placeholder="m">*(<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="Q_t2"
+                            placeholder="t2">-<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="Q_t1" placeholder="t1">)<span class="Q_Q"></span></p>
+                    <p>Q - количество теплоты <br> c - удельная тепло емкость <br> m - масса <br> t2 - конечная
+                        температура <br> t2 - начальная температура</p>
+                    <button class="Q_result">Результат</button>
+                </div>
+                <hr class="hr">
+                <div class="A">
+                    <h2>Работа электрического тока</h2>
+                    <p>A = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="A_U" placeholder="U">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="A_I" placeholder="I">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="A_t"
+                            placeholder="t"><span class="A_A"></span></p>
+                    <p>A - работа электрического тока <br> U - напряжение <br> I - сила тока <br> t - время</p>
+                    <button class="A_result">Результат</button>
+                </div>
+                <hr class="hr">
+                <div class="P">
+                    <h2>Мощность электрического тока</h2>
+                    <p>P = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="P_U" placeholder="U">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="P_I" placeholder="I"> <span
+                            class="P_P"></span></p>
+                    <p>P - мощность электрическо готока <br> U - напряжение <br> I - сила тока </p>
+                    <button class="P_result">Результат</button>
+                </div>
+            </div>
+            <div style="height:3000px"></div>
+            <div id="topButton"><img src="./img/icon_top.png" width="60px" height="60px" /></div>
+    </main>
+    <script src="./js/phyisik.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

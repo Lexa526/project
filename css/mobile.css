@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px) {
+  .baner {
+    width: 100%;
+    height: 300px;
+  }
+  .main {
+    width: 160%;
+  }
+  hr {
+    width: 70%;
+  }
+.nado{
+	width: 140%;
+	padding: 80px;
+ } 
+}
