@@ -9,10 +9,11 @@ html {
 }
 
 header {
-    background-color: black;
+    background-color: rgba(75,0,130);
     position: fixed;
     width: 100%;
     padding: auto;
+    transition: 0.3s;
 }
 
 .header {

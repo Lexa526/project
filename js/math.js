@@ -7,8 +7,11 @@ stepen.addEventListener("click", (e) => {
   if (a != 0 && b != 0) {
     document.querySelector(".c_stepen").value = result
   } else if (a != 0 && c != 0) {
-    let result = Math.log(c) / Math.log(a)
-    document.querySelector(".b_stepen").value = result
+    b = Math.log(c) / Math.log(a)
+    document.querySelector(".b_stepen").value = b
+  } else if (b!=0 && c!= 0){
+    a = Math.pow(c,1/b)
+    document.querySelector(".a_stepen").value = a
   }
 
 });
