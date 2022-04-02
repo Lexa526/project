@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Химия</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="shortcut icon" href="./img/main_icon.ico" type="image/x-icon">
 </head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#topButton').fadeIn();
+            } else {
+                $('#topButton').fadeOut();
+            }
+        });
+        $('#topButton').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 700);
+        });
+    });
+</script>
+
 <body>
-    
+    <header id="header">
+        <div class="header">
+            <img src="./img/icon.png" alt="">
+            <div class="links">
+                <a href="./index.html">Основной Сайт</a>
+                <a href="./math.html">Математика</a>
+                <a href="./physiks.html">Физика</a>
+                <a href="./himia.html">Химия</a>
+                <a href="https://www.ph4.ru/r.php" target="_blank">Случаяный Сайт</a>
+            </div>
+            <div>
+                <button class="bomb">💣</button>
+                <button class="clear">Очистить поля для ввода</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nado">
+            <div class="main_himia">
+                <h1>Химия</h1>
+                <h2>8 класс</h2>
+                <hr class="hr">
+                <div class="m">
+                    <h2>Масса</h2>
+                    <p>m = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="m_n" placeholder="n">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="m_M" placeholder="M"><span
+                            class="m_m"></span></p>
+                    <p>m - масса <br> n - количество <br> M - молярная масса</p>
+                    <button class="m_result">Результат</button>
+                </div>
+                <hr class="hr">
+                <div class="n">
+                    <h2>Количество</h2>
+                    <p>n = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="n_m" placeholder="m">/<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="n_M" placeholder="M"> = <input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="n_V" placeholder="V">/22.4(для газов)<span class="n_n"></span></p>
+                    <p>n - количество <br> m - масса <br> M - молярная масса</p>
+                    <button class="n_result">Результат</button>
+                </div>
+                <hr class="hr">
+                <div class="w">
+                    <h2>Масовая доля</h2>
+                    <p>w = (<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="w_A" placeholder="A">*<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="w_N" placeholder="N">)/<input type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" type="number" onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';" class="w_M" placeholder="M"><span class="w_w"></span></p>
+                    <p>w - масовая доля <br> A - атомная масса элеммента <br> N - количество атомов в соеденении <br> M - молярная масса</p>
+                    <button class="w_result">Результат</button>
+                </div>
+            </div>
+            <div style="height:3000px"></div>
+            <div id="topButton"><img src="./img/icon_top.png" width="60px" height="60px" /></div>
+    </main>
+    <script src="./js/himia.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
