@@ -46,11 +46,8 @@ s_xButton.addEventListener("click", (e) => {
     }
     if (b == 0 && c == 0) {
       if (a < 0) {
-        let x1 = Math.sqrt(-a)
-        let x2 = -x1
-        x1 = x(x1)
-        x2 = x(x2)
-        document.querySelector(".s_x_x").textContent = `x1 = ${x1}, x2 = ${x2}`
+        let x  = 0
+        document.querySelector(".s_x_x").textContent = `x = ${x1}`
       } else {
         document.querySelector(".s_x_x").textContent = "Нет решений(a > 0)"
       }
@@ -148,11 +145,28 @@ if (b == 0 && c != 0) {
 }
 if (b == 0 && c == 0) {
   if (a < 0) {
-    let x1 = Math.sqrt(-a)
-    let x2 = -x1
-    xx(x1, x2)
-  } else if (b == 0 && c == 0) {
-    noamwser()
+    let x = 0
+    if (a > 0) {
+      if (znak == ">") {
+        document.querySelector(".ne_x_x").textContent = `x = (-∞;${x1})U(${x1};+∞)`
+      } else if (znak == "<") {
+        document.querySelector(".ne_x_x").textContent = `x = ∅`
+      } else if (znak == ">=") {
+        document.querySelector(".ne_x_x").textContent = `x = (-∞;+∞)`
+      } else if (znak == "<=") {
+        document.querySelector(".ne_x_x").textContent = `x = {${x1}}`
+      }
+    } else if (a < 0) {
+      if (znak == ">") {
+        document.querySelector(".ne_x_x").textContent = `x = ∅`
+      } else if (znak == "<") {
+        document.querySelector(".ne_x_x").textContent = `x = (-∞;${x1})U(${x1};+∞)`
+      } else if (znak == ">=") {
+        document.querySelector(".ne_x_x").textContent = `x = {${x1}}`
+      } else if (znak == "<=") {
+        document.querySelector(".ne_x_x").textContent = `x = (-∞;+∞)`
+      }
+    }
   }
 }
 if (b != 0 && c != 0) {
